@@ -1,0 +1,25 @@
+{
+  "name": "rettc-cli",
+  "version": "0.0.7",
+  "description": "developer tool, rettc",
+  "bin": {
+    "rettc": "./bin/rettc"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "xiezhongfu",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:superMathGeekers/rettc.git"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "chalk": "^2.3.0",
+    "co": "^4.6.0",
+    "co-prompt": "^1.0.0",
+    "commander": "^2.11.0"
+  }
+}
