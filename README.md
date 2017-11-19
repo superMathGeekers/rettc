@@ -7,24 +7,24 @@ Copyright © 2017 superMathGeekers. All rights reserved.
 
 ###### add template ######
 ```bash
-npm run add
+rettc add
 ```
 add a template
 
 ###### list template ######
 ```bash
-npm run list
+rettc list
 ```
 list all templates
 
 ###### delete template ######
 ```bash
-npm run delete
+rettc delete
 ```
 delete a template
 
 ###### init template ######
 ```bash
-npm run init
+rettc init
 ```
 init a project by a template
