@@ -7,7 +7,8 @@
   },
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "delete": "cross-env rm -rf .git"
   },
   "author": "xiezhongfu",
   "license": "ISC",
@@ -15,7 +16,9 @@
     "type": "git",
     "url": "git@github.com:superMathGeekers/rettc.git"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "cross-env": "^5.1.1"
+  },
   "dependencies": {
     "chalk": "^2.3.0",
     "co": "^4.6.0",

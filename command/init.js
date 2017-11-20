@@ -27,8 +27,9 @@ module.exports = () => {
       if (error) {
         console.log(error)
         process.exit()
-      }
-      console.log(chalk.green('\n √ Generation completed!'))
+			}
+			exec(`npm run delete`)
+			console.log(chalk.green('\n √ Generation completed!'))
       console.log(`\n cd ${projectName} && npm install \n`)
       process.exit()
 	  })
