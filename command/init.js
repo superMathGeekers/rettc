@@ -4,6 +4,7 @@ const co = require('co')
 const prompt = require('co-prompt')
 const config = require('../templates')
 const chalk = require('chalk')
+const del = require('del')
 
 module.exports = () => {
  	co(function *() {
@@ -28,7 +29,9 @@ module.exports = () => {
         console.log(error)
         process.exit()
 			}
-			exec(`npm run delete`)
+			del(['../\.git*'], {force: true}).then(paths => {
+				//  console.log('Deleted files and folders:\n', paths.join('\n'));
+			});
 			console.log(chalk.green('\n √ Generation completed!'))
       console.log(`\n cd ${projectName} && npm install \n`)
       process.exit()

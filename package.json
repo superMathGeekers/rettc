@@ -1,14 +1,13 @@
 {
   "name": "rettc-cli",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "developer tool, rettc",
   "bin": {
     "rettc": "./bin/rettc"
   },
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "delete": "cross-env rm -rf .git"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "xiezhongfu",
   "license": "ISC",
@@ -16,13 +15,12 @@
     "type": "git",
     "url": "git@github.com:superMathGeekers/rettc.git"
   },
-  "devDependencies": {
-    "cross-env": "^5.1.1"
-  },
+  "devDependencies": {},
   "dependencies": {
     "chalk": "^2.3.0",
     "co": "^4.6.0",
     "co-prompt": "^1.0.0",
-    "commander": "^2.11.0"
+    "commander": "^2.11.0",
+    "del": "^3.0.0"
   }
 }
