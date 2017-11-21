@@ -1,6 +1,6 @@
 {
   "name": "rettc-cli",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "developer tool, rettc",
   "bin": {
     "rettc": "./bin/rettc"

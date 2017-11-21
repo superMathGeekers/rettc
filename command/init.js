@@ -29,7 +29,7 @@ module.exports = () => {
         console.log(error)
         process.exit()
 			}
-			del(['../\.git*'], {force: true}).then(paths => {
+			del([`../${projectName}/\.git*`], {force: true}).then(paths => {
 				//  console.log('Deleted files and folders:\n', paths.join('\n'));
 			});
 			console.log(chalk.green('\n √ Generation completed!'))
