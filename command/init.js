@@ -29,8 +29,8 @@ module.exports = () => {
         console.log(error)
         process.exit()
 			}
-			del([`../${projectName}/\.git*`], {force: true}).then(paths => {
-				//  console.log('Deleted files and folders:\n', paths.join('\n'));
+			del([`../../../../${projectName}/\.git*`], {force: true}).then(paths => {
+				 console.log('Deleted files and folders:\n', paths.join('\n'));
 			});
 			console.log(chalk.green('\n √ Generation completed!'))
       console.log(`\n cd ${projectName} && npm install \n`)
