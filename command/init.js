@@ -29,11 +29,16 @@ module.exports = () => {
 				console.log(error)
 				process.exit()
 			}
-			del([`${projectName}/\.git*`], { force: true }).then(paths => {
+			del([`${projectName}/\.git*`, !`${projectName}/\..gitignore`], { force: true }).then(paths => {
 				console.log(chalk.green('\n √ Generation completed!'))
 				console.log('Deleted files and folders:\n', paths, paths.join('\n'));
 				console.log(`\n cd ${projectName} && npm install \n`)
-				process.exit()
+				exec('git init', (error, stdout, stderr) => {
+					if (error) {
+						console.log(error)
+					}
+					process.exit()
+				})
 			});
 		})
 	})
