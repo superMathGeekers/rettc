@@ -1,15 +1,15 @@
 {
     "tpl": {
         "query": {
-            "url": "git@gitee.com:rettc/rettc-cli-query.git",
+            "url": "https://gitee.com/rettc/rettc-cli-query.git",
             "branch": "master" 
         },
         "mQuery": {
-            "url": "git@gitee.com:rettc/rettc-cli-mQuery.git",
+            "url": "https://gitee.com/rettc/rettc-cli-mQuery.git",
             "branch": "master" 
         },
         "soup": {
-            "url": "git@gitee.com:rettc/rettc-cli-soup.git",
+            "url": "https://gitee.com/rettc/rettc-cli-soup.git",
             "branch": "master" 
         }
     }
